@@ -1,0 +1,96 @@
+envVarGroups:
+  - name: classroomio-shared-secrets
+    envVars:
+      - key: AUTH_BEARER_TOKEN
+        generateValue: true
+      - key: PRIVATE_SERVER_KEY
+        generateValue: true
+      - key: BETTER_AUTH_SECRET
+        generateValue: true
+
+databases:
+  - name: classroomio-db-qlttlh
+    databaseName: classroomio
+    user: classroomio
+    plan: free
+
+services:
+  - type: redis
+    name: classroomio-redis-qlttlh
+    plan: free
+    ipAllowList: []
+    maxmemoryPolicy: allkeys-lru
+
+  - type: web
+    name: classroomio-api-qlttlh
+    runtime: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./docker/Dockerfile.api
+    envVars:
+      - fromGroup: classroomio-shared-secrets
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3081
+      - key: PUBLIC_IS_SELFHOSTED
+        value: true
+      - key: PUBLIC_SERVER_URL
+        value: https://classroomio-api-qlttlh.onrender.com
+      - key: TRUSTED_ORIGINS
+        value: https://classroomio-dashboard-qlttlh.onrender.com
+      - key: DASHBOARD_ORIGIN
+        value: https://classroomio-dashboard-qlttlh.onrender.com
+      - key: DATABASE_URL
+        fromDatabase:
+          name: classroomio-db-qlttlh
+          property: connectionString
+      - key: PRIVATE_DATABASE_URL
+        fromDatabase:
+          name: classroomio-db-qlttlh
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: classroomio-redis-qlttlh
+          property: connectionString
+      - key: GOOGLE_CLIENT_ID
+        value: self-hosted-placeholder
+      - key: GOOGLE_CLIENT_SECRET
+        value: self-hosted-placeholder
+      - key: SKIP_DB_SETUP
+        value: false
+
+  - type: web
+    name: classroomio-dashboard-qlttlh
+    runtime: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./docker/Dockerfile.dashboard
+    dockerBuildArgs:
+      - key: PUBLIC_IS_SELFHOSTED
+        value: true
+      - key: PUBLIC_SERVER_URL
+        value: https://classroomio-api-qlttlh.onrender.com
+    envVars:
+      - fromGroup: classroomio-shared-secrets
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3082
+      - key: ORIGIN
+        value: https://classroomio-dashboard-qlttlh.onrender.com
+      - key: DASHBOARD_ORIGIN
+        value: https://classroomio-dashboard-qlttlh.onrender.com
+      - key: PUBLIC_IS_SELFHOSTED
+        value: true
+      - key: PUBLIC_SERVER_URL
+        value: https://classroomio-api-qlttlh.onrender.com
+      - key: PRIVATE_SERVER_URL
+        value: https://classroomio-api-qlttlh.onrender.com
+      - key: PRIVATE_APP_HOST
+        value: classroomio-dashboard-qlttlh.onrender.com
+      - key: PRIVATE_APP_SUBDOMAINS
+        value: app
+      - key: ALLOWED_EXTERNAL_DOMAINS
+        value: classroomio-api-qlttlh.onrender.com
