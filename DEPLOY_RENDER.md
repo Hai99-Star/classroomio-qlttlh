@@ -28,6 +28,30 @@ This repo includes a `render.yaml` Blueprint for the dynamic ClassroomIO stack:
    https://classroomio-dashboard-qlttlh.onrender.com/login
    ```
 
+## Google OAuth
+
+Create a Google OAuth **Web application** client and add these URLs:
+
+```text
+Authorized JavaScript origins:
+https://classroomio-dashboard-qlttlh.onrender.com
+https://classroomio-api-qlttlh.onrender.com
+
+Authorized redirect URIs:
+https://classroomio-api-qlttlh.onrender.com/api/auth/callback/google
+```
+
+Then set these API service environment variables in Render:
+
+```text
+GOOGLE_CLIENT_ID=<your Google OAuth client ID>
+GOOGLE_CLIENT_SECRET=<your Google OAuth client secret>
+```
+
+Restart or manually deploy `classroomio-api-qlttlh` after saving them. Do not use
+`self-hosted-placeholder`; the API ignores placeholder values to avoid sending an
+invalid OAuth client to Google.
+
 ## Notes
 
 - Render free web services sleep after inactivity, so the first request can be slow.

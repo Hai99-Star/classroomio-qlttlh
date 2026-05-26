@@ -50,9 +50,9 @@ services:
           name: classroomio-redis-qlttlh
           property: connectionString
       - key: GOOGLE_CLIENT_ID
-        value: self-hosted-placeholder
+        sync: false
       - key: GOOGLE_CLIENT_SECRET
-        value: self-hosted-placeholder
+        sync: false
       - key: SKIP_DB_SETUP
         value: true
 

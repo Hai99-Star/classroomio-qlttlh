@@ -35,6 +35,18 @@ function buildOAuthProxyPlugin() {
   return [oAuthProxy({ productionURL: CONSTANTS.BASE_URL })];
 }
 
+function hasGoogleOAuthCredentials() {
+  const clientId = process.env.GOOGLE_CLIENT_ID?.trim();
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET?.trim();
+
+  return Boolean(
+    clientId &&
+      clientSecret &&
+      clientId !== 'self-hosted-placeholder' &&
+      clientSecret !== 'self-hosted-placeholder'
+  );
+}
+
 export const auth: ReturnType<typeof betterAuth> = betterAuth({
   baseURL: CONSTANTS.BASE_URL,
   database: drizzleAdapter(db, {
@@ -53,14 +65,16 @@ export const auth: ReturnType<typeof betterAuth> = betterAuth({
     enabled: true,
     sendVerificationEmail
   },
-  socialProviders: {
-    google: {
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      accessType: 'offline',
-      prompt: 'select_account consent'
-    }
-  },
+  socialProviders: hasGoogleOAuthCredentials()
+    ? {
+        google: {
+          clientId: process.env.GOOGLE_CLIENT_ID!,
+          clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+          accessType: 'offline',
+          prompt: 'select_account consent'
+        }
+      }
+    : {},
   trustedOrigins: (request) => {
     const origins = [...CONSTANTS.TRUSTED_ORIGINS];
     const originHeader = request?.headers.get('origin');
