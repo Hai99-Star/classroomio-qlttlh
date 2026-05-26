@@ -57,3 +57,4 @@ storybook-static
 .svelte-kit/
 
 company/
+supabase/.temp
