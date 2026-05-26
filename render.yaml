@@ -15,10 +15,12 @@ databases:
     plan: free
 
 services:
-  - type: redis
+  - type: keyvalue
     name: classroomio-redis-qlttlh
     plan: free
-    ipAllowList: []
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: everywhere
     maxmemoryPolicy: allkeys-lru
 
   - type: web
@@ -51,7 +53,7 @@ services:
           property: connectionString
       - key: REDIS_URL
         fromService:
-          type: redis
+          type: keyvalue
           name: classroomio-redis-qlttlh
           property: connectionString
       - key: GOOGLE_CLIENT_ID
@@ -67,11 +69,6 @@ services:
     plan: free
     dockerContext: .
     dockerfilePath: ./docker/Dockerfile.dashboard
-    dockerBuildArgs:
-      - key: PUBLIC_IS_SELFHOSTED
-        value: true
-      - key: PUBLIC_SERVER_URL
-        value: https://classroomio-api-qlttlh.onrender.com
     envVars:
       - fromGroup: classroomio-shared-secrets
       - key: NODE_ENV
