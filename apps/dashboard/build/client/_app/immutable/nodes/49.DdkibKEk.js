@@ -1,0 +1,1 @@
+import{R as r}from"../chunks/D0iwhpLH.js";function t(e,o){throw new r(e,o.toString())}const n=({params:e,url:o})=>{throw t(307,`/org/${e.slug}/mcp${o.search}`)},a=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{a as universal};

@@ -1,0 +1,1 @@
+import{s as a,o as n}from"./Dv9Z3nBC.js";const i=a().min(5),s=n({fullname:i,orgName:a().min(5).refine(e=>!/^[-]|[-]$/.test(e),{message:"validations.organization_name.hyphen_rule"}),siteName:a().min(5).refine(e=>!/^[-]|[-]$/.test(e),{message:"validations.site_name.hyphen_rule"})}),o=n({fullname:i,goal:a().min(5),source:a().min(5)});export{s as Z,o as a};

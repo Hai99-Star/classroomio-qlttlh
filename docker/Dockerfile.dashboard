@@ -14,6 +14,7 @@ COPY . .
 RUN pnpm install --frozen-lockfile --ignore-scripts --filter @cio/dashboard...
 RUN find . -name 'tsconfig.tsbuildinfo' -delete
 RUN pnpm -r --filter @cio/dashboard^... build
+RUN test -f apps/dashboard/build/index.js || (echo "ERROR: Dashboard build output not found at apps/dashboard/build/index.js" && exit 1)
 
 EXPOSE 3082
 
@@ -22,4 +23,4 @@ ENV NODE_ENV=production \
     PUBLIC_IS_SELFHOSTED=true
 
 WORKDIR /app/apps/dashboard
-CMD ["pnpm", "exec", "vite", "dev", "--host", "0.0.0.0", "--port", "3082"]
+CMD ["node", "build/index.js"]

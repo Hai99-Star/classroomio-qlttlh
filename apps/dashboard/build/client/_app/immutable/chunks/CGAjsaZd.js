@@ -1,0 +1,1 @@
+function c(t,r={}){const{fallback:e="item",appendTimestamp:s=!1}=r,a=(t??e).trim().toLowerCase().replace(/[^a-z0-9\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")||e;return s?`${a}-${Date.now()}`:a}export{c as g};

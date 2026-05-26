@@ -1,0 +1,1 @@
+import{o as a,k as t,s as o}from"./Dv9Z3nBC.js";import{m as e}from"./ESCY0ymb.js";const n=a({email:t()}),i=a({password:o().min(8),confirmPassword:o().min(8),token:o()}),d=r=>{const s=n.safeParse(r);if(!s.success)return e(s.error)},f=r=>{const s=i.safeParse(r);if(!s.success)return e(s.error)};export{d as f,f as r};
