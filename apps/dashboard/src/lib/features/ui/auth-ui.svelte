@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import { page } from '$app/state';
+  import { env } from '$env/dynamic/public';
   import * as Avatar from '@cio/ui/base/avatar';
   import { t } from '$lib/utils/functions/translations';
   import { currentOrg } from '$lib/utils/store/org';
@@ -54,6 +55,15 @@
     console.log({ redirectTo });
 
     try {
+      const apiBaseUrl = env.PUBLIC_SERVER_URL?.replace(/\/$/, '');
+      if (apiBaseUrl) {
+        const url = new URL('/auth/google', apiBaseUrl);
+        url.searchParams.set('callbackURL', redirectTo);
+        url.searchParams.set('errorCallbackURL', errorCallbackURL);
+        window.location.href = url.toString();
+        return;
+      }
+
       console.log('signInWithGoogle');
       const data = await authClient.signIn.social({
         provider: 'google',

@@ -1,1 +1,0 @@
-import{g as r}from"./RcvJY8iF.js";import{r as o}from"./07PnuNgb.js";function s(a){return a.toLowerCase().replace(/\s+/g,"-").replace(/[^a-zA-Z0-9-]/g,"")}function c(){const a=new URL(window.location.href);a.searchParams.set("upgrade","true");const e=a.searchParams.toString();r(o(window.location.pathname+`?${e}`,{}))}export{s as g,c as o};

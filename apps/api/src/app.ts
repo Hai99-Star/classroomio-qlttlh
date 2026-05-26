@@ -95,6 +95,53 @@ export const app = new Hono()
       message: `"Welcome to Classroomio.com API - docs are at ${API_SERVER_URL}/docs"`
     })
   )
+  .get('/auth/google', async (c) => {
+    const dashboardOrigin =
+      process.env.DASHBOARD_ORIGIN?.trim() ||
+      process.env.TRUSTED_ORIGINS?.split(',')[0]?.trim() ||
+      'http://localhost:3082';
+    const callbackURL = c.req.query('callbackURL') || dashboardOrigin;
+    const errorCallbackURL = c.req.query('errorCallbackURL') || `${dashboardOrigin}/auth-failed`;
+
+    const authUrl = new URL('/api/auth/sign-in/social', c.req.url);
+    const response = await auth.handler(
+      new Request(authUrl, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          ...(c.req.header('cookie') ? { cookie: c.req.header('cookie')! } : {})
+        },
+        body: JSON.stringify({
+          provider: 'google',
+          callbackURL,
+          errorCallbackURL
+        })
+      })
+    );
+
+    const data = (await response.json().catch(() => null)) as { url?: string } | null;
+
+    if (!response.ok || !data?.url) {
+      console.error('[auth/google] failed to start Google OAuth', {
+        status: response.status,
+        data
+      });
+      return c.redirect(errorCallbackURL);
+    }
+
+    const headers = new Headers();
+    const setCookies =
+      (response.headers as unknown as { getSetCookie?: () => string[] }).getSetCookie?.() ??
+      response.headers.get('set-cookie')?.split(/,(?=\s*[^;,]+=)/g) ??
+      [];
+
+    for (const cookie of setCookies) {
+      headers.append('set-cookie', cookie);
+    }
+
+    headers.set('location', data.url);
+    return new Response(null, { status: 302, headers });
+  })
   .use('/api/auth/sign-up/*', signupGuard)
   .on(['POST', 'GET'], '/api/auth/*', async (c) => {
     // Behind the Cloudflare Worker proxy the raw Request URL points at the

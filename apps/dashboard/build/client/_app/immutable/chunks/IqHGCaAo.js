@@ -1,1 +1,0 @@
-import{R as t,c as a,a as o}from"./CrIWqoET.js";import{d as s,w as i}from"./IqKSOxrF.js";import"./DIo-OXiv.js";const n=i({isDark:!1,isOrgSite:!1,orgSiteName:""}),l=s(a,r=>r.roleId===0?null:r.roleId===t.STUDENT),c=s([n,l],([r,e])=>e??!1),u=s([c,o],([r,e])=>r?"/lms":e);export{l as a,u as b,n as g,c as i};
