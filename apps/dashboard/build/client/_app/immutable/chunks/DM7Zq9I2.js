@@ -1,0 +1,3 @@
+import{w as a}from"./IqKSOxrF.js";import{s}from"./CXBIVgY1.js";const i="ai-assistant";function r(){s.open(i)}function I(){s.close()}function d(){s.toggle(i)}const l=a(null);function h(t){l.set(t)}function A(){l.set(null)}const o=a(null),c=a(null);function C(t){o.set(t)}function P(t){c.set(t)}function g(){o.set(null)}function T(){c.set(null)}const u=a(null);function q(){u.set(null)}function f(t){return t.trim().split(`
+`).map(n=>`> ${n}`).join(`
+`)}function w(t){const n=f(t);if(!n.trim())return;const e=s.activePanelId===i;u.set({text:n,mode:e?"append":"new"}),e||r()}export{i as A,P as a,h as b,I as c,g as d,T as e,A as f,q as g,c as h,o as i,l as j,u as k,r as o,w as q,C as s,d as t};

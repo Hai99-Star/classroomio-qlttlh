@@ -56,7 +56,10 @@
 
     try {
       const apiBaseUrl = env.PUBLIC_SERVER_URL?.replace(/\/$/, '');
-      if (apiBaseUrl) {
+      const isCrossOriginSelfHosted =
+        env.PUBLIC_IS_SELFHOSTED === 'true' && apiBaseUrl && apiBaseUrl !== window.location.origin;
+
+      if (isCrossOriginSelfHosted) {
         const url = new URL('/auth/google', apiBaseUrl);
         url.searchParams.set('callbackURL', redirectTo);
         url.searchParams.set('errorCallbackURL', errorCallbackURL);

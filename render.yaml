@@ -39,7 +39,7 @@ services:
       - key: PUBLIC_IS_SELFHOSTED
         value: true
       - key: PUBLIC_SERVER_URL
-        value: https://classroomio-api-qlttlh.onrender.com
+        value: https://classroomio-dashboard-qlttlh.onrender.com
       - key: TRUSTED_ORIGINS
         value: https://classroomio-dashboard-qlttlh.onrender.com
       - key: DASHBOARD_ORIGIN
@@ -73,9 +73,9 @@ services:
       - key: DASHBOARD_ORIGIN
         value: https://classroomio-dashboard-qlttlh.onrender.com
       - key: PUBLIC_IS_SELFHOSTED
-        value: true
+        value: false
       - key: PUBLIC_SERVER_URL
-        value: https://classroomio-api-qlttlh.onrender.com
+        value: https://classroomio-dashboard-qlttlh.onrender.com
       - key: PRIVATE_SERVER_URL
         value: https://classroomio-api-qlttlh.onrender.com
       - key: PRIVATE_APP_HOST

@@ -1,0 +1,1 @@
+import{R as s,c as a,a as i}from"./BSPoJiGp.js";import{d as t,w as o}from"./IqKSOxrF.js";import"./BnEUqkOx.js";const n=o({isDark:!1,isOrgSite:!1,orgSiteName:""}),l=t(a,r=>r.roleId===0?null:r.roleId===s.STUDENT),d=t([n,l],([r,e])=>r.isOrgSite),g=t([d,i],([r,e])=>r?"/lms":e);export{l as a,g as b,n as g,d as i};

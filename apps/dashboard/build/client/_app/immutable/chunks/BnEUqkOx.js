@@ -1,0 +1,1 @@
+const s={BASIC:"BASIC",EARLY_ADOPTER:"EARLY_ADOPTER",ENTERPRISE:"ENTERPRISE"},o={[s.BASIC]:"Free",[s.EARLY_ADOPTER]:"Early Adopter",[s.ENTERPRISE]:"Enterprise"};var A;(function(E){E.Section="SECTION",E.Lesson="LESSON",E.Exercise="EXERCISE"})(A||(A={}));const R="myclassroomio.com",N="classroomio.com";export{N as B,A as C,s as P,R as T,o as a};
