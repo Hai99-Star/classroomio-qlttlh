@@ -23,8 +23,19 @@ function resolveBaseURL() {
   if (typeof window === 'undefined') {
     return env.PUBLIC_SERVER_URL || 'http://localhost:3002';
   }
+
+  const publicServerUrl = env.PUBLIC_SERVER_URL;
+  const isRenderSplitDomain =
+    publicServerUrl &&
+    window.location.hostname.endsWith('.onrender.com') &&
+    new URL(publicServerUrl, window.location.origin).hostname !== window.location.hostname;
+
+  if (isRenderSplitDomain) {
+    return `${window.location.origin}/proxy/api/auth`;
+  }
+
   if (env.PUBLIC_IS_SELFHOSTED === 'true' || dev) {
-    return env.PUBLIC_SERVER_URL || `${window.location.origin}/api/auth`;
+    return publicServerUrl || `${window.location.origin}/api/auth`;
   }
   return `${window.location.origin}/proxy/api/auth`;
 }

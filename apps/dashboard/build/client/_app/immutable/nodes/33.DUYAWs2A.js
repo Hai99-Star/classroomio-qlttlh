@@ -1,0 +1,130 @@
+import"../chunks/CWj6FrbW.js";import{o as Ht}from"../chunks/D0IxJWuM.js";import{p as Te,d as K,e as $,h as nt,n as lt,b as i,c as Ae,u as yt,g as e,s as He,a as me,f as k,i as r,r as a,k as n,j as l,m as y,t as g,l as Ie,ar as Kt,as as Yt}from"../chunks/DMkybXYI.js";import{s as d}from"../chunks/B4Gb2Xkj.js";import{i as w}from"../chunks/BDnaBRn_.js";import{c as V}from"../chunks/CGCUeNHI.js";import{h as Jt}from"../chunks/ChhRsMFN.js";import{c as ct,r as dt,s as ue,a as ut,p as Qt}from"../chunks/CbrIGZze.js";import{e as Wt,i as Xt}from"../chunks/BCCWaYmt.js";import{a as Zt}from"../chunks/CY39jyo7.js";import{g as Ct}from"../chunks/XQ9oum-X.js";import{B as er}from"../chunks/DlLo6Vfc.js";import{B as Qe}from"../chunks/DQ9kk-83.js";import{P as tr}from"../chunks/DJp-6MI5.js";import{E as rr}from"../chunks/gaotG1ff.js";import{B as Ye}from"../chunks/DksUN-3y.js";import{A as at}from"../chunks/BPO5P6Xt.js";import"../chunks/D8Ymbdf-.js";import"../chunks/5ePjsDa6.js";import"../chunks/CU9m3kEB.js";import{t as ce}from"../chunks/6w9gDVZk.js";import"../chunks/DkKyNm3g.js";import{c as St,d as ar,R as ot}from"../chunks/DrGc9HY7.js";/* empty css                */import"../chunks/CAlvmli1.js";import"../chunks/D4LeFfZb.js";import{p as Dt}from"../chunks/DIaLGbHq.js";import"../chunks/DquZVvUn.js";import"../chunks/HRdsLGen.js";/* empty css                */import"../chunks/B6GXHQnr.js";import{l as or}from"../chunks/Dr2db8V1.js";import{I as Je}from"../chunks/BgREJWt8.js";import"../chunks/BfDspkL2.js";import"../chunks/BOgI2Ay5.js";import"../chunks/BQoWVZKs.js";import"../chunks/wTCxkw2o.js";import"../chunks/GciKy6AY.js";import{c as mt}from"../chunks/cMdhlq0f.js";import{i as de,p as Pt,n as wt,G as st,m as sr,o as ir}from"../chunks/Bb4lreKw.js";import"../chunks/XoWM6j9Q.js";import"../chunks/CBz_8aID.js";import"../chunks/DIo-OXiv.js";import"../chunks/CUMvGXFa.js";import"../chunks/CKMpxaHP.js";import{C as nr}from"../chunks/DSVJrnS6.js";import{o as lr,c as cr}from"../chunks/BmnyDg0s.js";import{E as kt}from"../chunks/CB2mZDUZ.js";import{C as It}from"../chunks/B-HoOQoK.js";import{I as pt}from"../chunks/C5yHnGVg.js";import{B as dr}from"../chunks/BwEacdzn.js";import{U as ur}from"../chunks/DthFO5B4.js";import"../chunks/D0iwhpLH.js";import"../chunks/D7bu37Vr.js";import"../chunks/eGWOC8AS.js";import"../chunks/BEtp4UtC.js";import"../chunks/CTziVF1F.js";import"../chunks/BUKH9zhr.js";import{P as mr,a as pr,b as vr,c as fr}from"../chunks/YXOfYF8B.js";import{P as gr}from"../chunks/B8SdShMd.js";import{P as zt}from"../chunks/DHcrJejE.js";import"../chunks/DDa3WYGH.js";import"../chunks/iQKhP4xg.js";import"../chunks/CQ0omE3D.js";import"../chunks/BcyoGqn9.js";import"../chunks/IldEbo1M.js";import"../chunks/VBwJsO3_.js";import"../chunks/D3WsrIVV.js";import"../chunks/D3VGd2YI.js";import"../chunks/DdE6NfET.js";import"../chunks/D-d-bSKM.js";import"../chunks/B_NqQBbk.js";import"../chunks/Civx7WiA.js";import"../chunks/DxdjvMl-.js";import"../chunks/BzfEluO6.js";import"../chunks/BTjdaDFO.js";import"../chunks/CCCAWE6q.js";import"../chunks/CH2PI4Y6.js";import"../chunks/n1VI7XvK.js";import"../chunks/DaRej8lg.js";import{D as _r,a as hr,b as xr,R as $r}from"../chunks/BmJbP3sF.js";import{s as it}from"../chunks/C_RNpsE7.js";function Nt(M,c){Te(c,!0);/**
+ * @license @lucide/svelte v0.545.0 - ISC
+ *
+ * ISC License
+ *
+ * Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2023 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2025.
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ * ---
+ *
+ * The MIT License (MIT) (for portions derived from Feather)
+ *
+ * Copyright (c) 2013-2023 Cole Bemis
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */let b=dt(c,["$$slots","$$events","$$legacy"]);const C=[["rect",{width:"8",height:"4",x:"8",y:"2",rx:"1",ry:"1"}],["path",{d:"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"}],["path",{d:"m9 14 2 2 4-4"}]];pt(M,ct({name:"clipboard-check"},()=>b,{get iconNode(){return C},children:(j,o)=>{var p=K(),h=$(p);nt(h,()=>c.children??lt),i(j,p)},$$slots:{default:!0}})),Ae()}function br(M,c){Te(c,!0);/**
+ * @license @lucide/svelte v0.545.0 - ISC
+ *
+ * ISC License
+ *
+ * Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2023 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2025.
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ * ---
+ *
+ * The MIT License (MIT) (for portions derived from Feather)
+ *
+ * Copyright (c) 2013-2023 Cole Bemis
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */let b=dt(c,["$$slots","$$events","$$legacy"]);const C=[["path",{d:"M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"}]];pt(M,ct({name:"flame"},()=>b,{get iconNode(){return C},children:(j,o)=>{var p=K(),h=$(p);nt(h,()=>c.children??lt),i(j,p)},$$slots:{default:!0}})),Ae()}function yr(M,c){Te(c,!0);/**
+ * @license @lucide/svelte v0.545.0 - ISC
+ *
+ * ISC License
+ *
+ * Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2023 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2025.
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ * ---
+ *
+ * The MIT License (MIT) (for portions derived from Feather)
+ *
+ * Copyright (c) 2013-2023 Cole Bemis
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */let b=dt(c,["$$slots","$$events","$$legacy"]);const C=[["circle",{cx:"12",cy:"12",r:"10"}],["circle",{cx:"12",cy:"12",r:"6"}],["circle",{cx:"12",cy:"12",r:"2"}]];pt(M,ct({name:"target"},()=>b,{get iconNode(){return C},children:(j,o)=>{var p=K(),h=$(p);nt(h,()=>c.children??lt),i(j,p)},$$slots:{default:!0}})),Ae()}var Cr=k("<!> <!>",1),Pr=k('<section class="ui:border-primary/20 ui:bg-primary/10 rounded border p-4 md:p-6"><div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"><div class="max-w-xl space-y-2"><p class="ui:text-primary text-xs font-semibold tracking-[0.18em] uppercase"> </p> <h2 class="text-xl font-semibold tracking-tight"><!></h2></div> <div class="flex shrink-0 flex-wrap items-center gap-2"><!> <!></div></div></section>'),wr=k('<img alt="" class="size-full rounded object-cover"/>'),kr=k('<p class="ui:text-muted-foreground mt-1 line-clamp-2 text-sm"> </p>'),Ir=k('<div class="mt-3"><!></div>'),zr=k("<!> <!>",1),Nr=k('<article class="ui:bg-card ui:text-card-foreground rounded border p-4"><div class="flex flex-col gap-4 md:flex-row md:items-center lg:flex-col lg:items-stretch xl:flex-row xl:items-center"><div class="flex min-w-0 flex-1 items-start gap-4"><div class="ui:bg-primary/10 flex size-12 shrink-0 items-center justify-center rounded"><!></div> <div class="min-w-0 flex-1"><div class="flex min-w-0 flex-wrap items-center gap-2"><h3 class="truncate text-base font-semibold"> </h3> <!></div> <!> <!></div></div> <div class="flex shrink-0 items-center gap-2"><!> <!></div></div> <div class="mt-5 flex items-center gap-4"><div class="min-w-0 flex-1"><div class="mb-2 flex items-center justify-between text-xs"><span class="ui:text-muted-foreground"> </span> <span class="ui:text-muted-foreground"> </span></div> <!></div></div></article>'),Sr=k('<div class="ui:bg-card rounded border p-4"><!></div>'),Dr=k('<div class="space-y-6 pb-8"><!> <section class="mb-10 flex flex-wrap items-start"><div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"><!> <!> <!></div></section> <div class="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.72fr)]"><section class="flex h-full flex-col space-y-4"><h2 class="ui:text-muted-foreground text-sm font-semibold tracking-[0.14em] uppercase"> </h2> <div class="flex flex-1 flex-col space-y-3"><!></div></section> <section class="flex h-full flex-col space-y-4"><h2 class="ui:text-muted-foreground text-sm font-semibold tracking-[0.14em] uppercase"> </h2> <article class="ui:bg-card ui:text-card-foreground flex flex-1 rounded border p-4"><div class="flex items-center justify-between gap-4 lg:flex-col lg:items-start xl:flex-row xl:items-center"><div class="flex min-w-0 items-center gap-4"><div class="ui:bg-primary/10 flex size-12 shrink-0 items-center justify-center rounded"><!></div> <div class="min-w-0"><h3 class="font-semibold"> </h3> <p class="ui:text-muted-foreground mt-1 text-sm"><!></p></div></div> <p class="ui:text-primary shrink-0 text-2xl font-semibold"><!></p></div></article></section></div></div>');function Or(M,c){Te(c,!0);const b=()=>ue(Dt,"$profile",p),C=()=>ue(St,"$currentOrg",p),j=()=>ue(ar,"$currentOrgDomain",p),o=()=>ue(ce,"$t",p),[p,h]=ut();let Y=He(null),ze=He(!1),pe=l(()=>de.enrolledCourses.reduce((t,s)=>t+_(s),0)),ve=l(()=>de.enrolledCourses.reduce((t,s)=>t+v(s),0)),q=l(()=>e(ve)>0?Math.round(e(pe)/e(ve)*100):0),I=l(()=>de.enrolledCourses.filter(t=>t.type==="COMPLIANCE")),P=l(()=>e(I).filter(t=>Pt(t))),B=l(()=>e(I).length>0?Math.round(e(P).length/e(I).length*100):null),fe=l(()=>de.enrolledCourses.filter(t=>!Pt(t))),ge=l(()=>te(e(fe))),z=l(()=>e(ge)[0]??de.enrolledCourses[0]??null);yt(()=>{!b().id||!C().id||de.getEnrolledCourses()}),yt(()=>{!b().id||e(ze)||(me(ze,!0),Ee())});function _(t){const s="exercisesCompleted"in t&&typeof t.exercisesCompleted=="number"?t.exercisesCompleted:0;return(t.progressRate||0)+s}function v(t){const s="exerciseCount"in t&&typeof t.exerciseCount=="number"?t.exerciseCount:0;return(t.lessonCount||0)+s}function te(t){return[...t].sort((s,f)=>{var Z,Oe;const H=(Z=wt(s))==null?void 0:Z.value,u=(Oe=wt(f))==null?void 0:Oe.value;if(H||u){const je=H?new Date(H).getTime():Number.POSITIVE_INFINITY,Ce=u?new Date(u).getTime():Number.POSITIVE_INFINITY;return je-Ce}return st(f)-st(s)}).slice(0,3)}async function Ee(){try{const s=await(await mt.dash["login-streak"].$get()).json();s.success&&me(Y,s.data.daysActive,!0)}catch(t){console.error("Failed to load login streak",t),me(Y,0)}}function re(t){t&&Ct(`/courses/${t}/lessons?next=true`)}function U(t){return!t||t.type!=="PUBLIC"||!(typeof t.slug=="string"?t.slug:"").trim()?!1:!!t.isPublished}function ae(t){if(!(t!=null&&t.id)||!U(t))return;const s=typeof t.slug=="string"?t.slug:"";lr({courseId:t.id,courseSlug:s,currentOrgDomain:j()})}async function oe(t){if(!t||!U(t))return;const s=typeof t.slug=="string"?t.slug:"";await cr(s,j())}var L=Dr(),se=r(L);Ye(se,{delay:.05,once:!0,children:(t,s)=>{var f=Pr(),H=r(f),u=r(H),Z=r(u),Oe=r(Z,!0);a(Z);var je=n(Z,2),Ce=r(je);{var Be=x=>{var N=y();g(S=>d(N,S),[()=>o()("dashboard.course_awaits_you",{title:e(z).title})]),i(x,N)},Ue=x=>{var N=y();g(S=>d(N,S),[()=>o()("dashboard.learning_awaits_you")]),i(x,N)};w(Ce,x=>{e(z)?x(Be):x(Ue,!1)})}a(je),a(u);var Le=n(u,2),Ke=r(Le);{var Xe=x=>{var N=Cr(),S=$(N);{let Pe=l(()=>o()("courses.course_card.context_menu.open_public_course")),we=l(()=>o()("courses.course_card.context_menu.open_public_course"));Je(S,{variant:"outline",onclick:()=>ae(e(z)),get tooltip(){return e(Pe)},get"aria-label"(){return e(we)},children:(D,ee)=>{kt(D,{class:"size-4"})},$$slots:{default:!0}})}var Fe=n(S,2);{let Pe=l(()=>o()("courses.course_card.context_menu.copy_course_url")),we=l(()=>o()("courses.course_card.context_menu.copy_course_url"));Je(Fe,{variant:"outline",onclick:()=>void oe(e(z)),get tooltip(){return e(Pe)},get"aria-label"(){return e(we)},children:(D,ee)=>{It(D,{class:"size-4"})},$$slots:{default:!0}})}i(x,N)};w(Ke,x=>{e(z)&&U(e(z))&&x(Xe)})}var Ze=n(Ke,2);Qe(Ze,{variant:"outline",class:"shrink-0",onclick:()=>e(z)?re(e(z).id):Ct("/lms/explore"),children:(x,N)=>{var S=K(),Fe=$(S);{var Pe=D=>{var ee=y();g(Re=>d(ee,Re),[()=>o()("dashboard.continue_learning")]),i(D,ee)},we=D=>{var ee=y();g(Re=>d(ee,Re),[()=>o()("dashboard.view_courses")]),i(D,ee)};w(Fe,D=>{e(z)?D(Pe):D(we,!1)})}i(x,S)},$$slots:{default:!0}}),a(Le),a(H),a(f),g(x=>d(Oe,x),[()=>o()("dashboard.pick_up_where_you_left_off")]),i(t,f)},$$slots:{default:!0}});var _e=n(se,2),ie=r(_e),Ne=r(ie);Ye(Ne,{delay:.1,once:!0,children:(t,s)=>{{let f=l(()=>({icon:yr,title:o()("dashboard.progress"),percentage:e(q),description:o()("dashboard.items_done",{completed:e(pe),total:e(ve)})}));at(t,{get activity(){return e(f)}})}},$$slots:{default:!0}});var T=n(Ne,2);Ye(T,{delay:.15,once:!0,children:(t,s)=>{{let f=l(()=>({icon:Nt,title:o()("dashboard.compliance"),percentage:e(B)??"--",description:o()("dashboard.compliance_met",{completed:e(P).length,total:e(I).length}),hidePercentage:e(B)===null}));at(t,{get activity(){return e(f)}})}},$$slots:{default:!0}});var J=n(T,2);Ye(J,{delay:.2,once:!0,children:(t,s)=>{{let f=l(()=>({icon:br,title:o()("dashboard.streak"),percentage:e(Y)??0,description:o()("dashboard.days_active"),hidePercentage:!0}));at(t,{get activity(){return e(f)}})}},$$slots:{default:!0}}),a(ie),a(_e);var A=n(_e,2),Q=r(A),W=r(Q),Se=r(W,!0);a(W);var he=n(W,2),Me=r(he);{var X=t=>{var s=K(),f=$(s);Wt(f,17,()=>e(ge),Xt,(H,u)=>{const Z=l(()=>st(e(u))),Oe=l(()=>v(e(u))),je=l(()=>_(e(u)));var Ce=Nr(),Be=r(Ce),Ue=r(Be),Le=r(Ue),Ke=r(Le);{var Xe=m=>{var O=wr();g(()=>Zt(O,"src",e(u).logo)),i(m,O)},Ze=m=>{ur(m,{class:"ui:text-primary size-5"})};w(Ke,m=>{e(u).logo?m(Xe):m(Ze,!1)})}a(Le);var x=n(Le,2),N=r(x),S=r(N),Fe=r(S,!0);a(S);var Pe=n(S,2);{var we=m=>{nr(m,{class:"shrink-0"})};w(Pe,m=>{e(u).type==="PUBLIC"&&m(we)})}a(N);var D=n(N,2);{var ee=m=>{var O=kr(),R=r(O,!0);a(O),g(()=>d(R,e(u).description)),i(m,O)};w(D,m=>{e(u).description&&m(ee)})}var Re=n(D,2);{var Bt=m=>{const O=l(()=>sr(e(u)));var R=Ir(),Ve=r(R);{var qe=ke=>{{let Ge=l(()=>ir(e(u)));er(ke,{get variant(){return e(Ge)},children:(rt,Br)=>{Ie();var bt=y();g(Gt=>d(bt,Gt),[()=>o()(e(O))]),i(rt,bt)},$$slots:{default:!0}})}};w(Ve,ke=>{e(O)&&ke(qe)})}a(R),i(m,R)};w(Re,m=>{e(u).type==="COMPLIANCE"&&m(Bt)})}a(x),a(Ue);var gt=n(Ue,2),_t=r(gt);{var Ut=m=>{var O=zr(),R=$(O);{let qe=l(()=>o()("courses.course_card.context_menu.open_public_course")),ke=l(()=>o()("courses.course_card.context_menu.open_public_course"));Je(R,{variant:"outline",onclick:()=>ae(e(u)),get tooltip(){return e(qe)},get"aria-label"(){return e(ke)},children:(Ge,rt)=>{kt(Ge,{class:"size-4"})},$$slots:{default:!0}})}var Ve=n(R,2);{let qe=l(()=>o()("courses.course_card.context_menu.copy_course_url")),ke=l(()=>o()("courses.course_card.context_menu.copy_course_url"));Je(Ve,{variant:"outline",onclick:()=>void oe(e(u)),get tooltip(){return e(qe)},get"aria-label"(){return e(ke)},children:(Ge,rt)=>{It(Ge,{class:"size-4"})},$$slots:{default:!0}})}i(m,O)};w(_t,m=>{U(e(u))&&m(Ut)})}var Ft=n(_t,2);Qe(Ft,{variant:"outline",class:"shrink-0",onclick:()=>re(e(u).id),children:(m,O)=>{Ie();var R=y();g(Ve=>d(R,Ve),[()=>o()("dashboard.continue")]),i(m,R)},$$slots:{default:!0}}),a(gt),a(Be);var ht=n(Be,2),xt=r(ht),et=r(xt),tt=r(et),Rt=r(tt,!0);a(tt);var $t=n(tt,2),Vt=r($t);a($t),a(et);var qt=n(et,2);tr(qt,{get value(){return e(Z)},max:100,class:"ui:h-1.5"}),a(xt),a(ht),a(Ce),g(m=>{d(Fe,e(u).title),d(Rt,m),d(Vt,`${e(Z)??""}%`)},[()=>o()("dashboard.items_done",{completed:e(je),total:e(Oe)})]),i(H,Ce)}),i(t,s)},ne=t=>{var s=Sr(),f=r(s);{let H=l(()=>o()("dashboard.no_courses")),u=l(()=>o()("dashboard.start_course"));rr(f,{get title(){return e(H)},get description(){return e(u)},get icon(){return dr}})}a(s),i(t,s)};w(Me,t=>{e(ge).length>0?t(X):t(ne,!1)})}a(he),a(Q);var F=n(Q,2),le=r(F),G=r(le,!0);a(le);var xe=n(le,2),$e=r(xe),be=r($e),E=r(be),ye=r(E);Nt(ye,{class:"ui:text-primary size-5"}),a(E);var De=n(E,2),We=r(De),Ot=r(We,!0);a(We);var vt=n(We,2),jt=r(vt);{var Lt=t=>{var s=y();g(f=>d(s,f),[()=>o()("dashboard.required_courses_completed",{completed:e(P).length,total:e(I).length})]),i(t,s)},Tt=t=>{var s=y();g(f=>d(s,f),[()=>o()("dashboard.compliance_score_empty")]),i(t,s)};w(jt,t=>{e(I).length>0?t(Lt):t(Tt,!1)})}a(vt),a(De),a(be);var ft=n(be,2),At=r(ft);{var Et=t=>{var s=y("--");i(t,s)},Mt=t=>{var s=y();g(()=>d(s,`${e(B)??""}%`)),i(t,s)};w(At,t=>{e(B)===null?t(Et):t(Mt,!1)})}a(ft),a($e),a(xe),a(F),a(A),a(L),g((t,s,f)=>{d(Se,t),d(G,s),d(Ot,f)},[()=>o()("dashboard.currently_learning"),()=>o()("dashboard.compliance"),()=>o()("dashboard.compliance_score")]),i(M,L),Ae(),h()}var jr=k('<!> <div class="mt-2 space-y-3 px-2 text-center"><p class="text-sm font-light dark:text-white"> </p> <p class="text-sm font-light dark:text-white"> </p></div> <div class="mt-6 flex items-center justify-between"><!> <!></div>',1);function Lr(M,c){Te(c,!0);const b=()=>ue(ce,"$t",C),[C,j]=ut();let o=Qt(c,"open",15,!1),p=He(!1);const h=l(()=>c.invite.organization.name);function Y(){return c.invite.roleId===ot.STUDENT?ce.get("invite.organization.invitation_student",{orgName:e(h)}):c.invite.roleId===ot.TUTOR?ce.get("invite.organization.invitation_teacher",{orgName:e(h)}):c.invite.roleId===ot.ADMIN?ce.get("invite.organization.invitation_admin",{orgName:e(h)}):ce.get("invite.organization.invitation_fallback",{orgName:e(h),role:c.invite.roleLabel})}async function ze(){var q;me(p,!0);try{const P=await(await mt.invite.organization[":inviteId"]["accept-by-id"].$post({param:{inviteId:c.invite.id}})).json();if(!P.success){const B=P;it.error(B.error??B.message??ce.get("invite.organization.messages.join_failed"));return}it.success("invite.organization.messages.joined"),o(!1),(q=c.onAccepted)==null||q.call(c)}catch(I){console.error("Failed to accept organization invite by id",I),it.error("invite.organization.messages.join_failed")}finally{me(p,!1)}}var pe=K(),ve=$(pe);V(ve,()=>$r,(q,I)=>{I(q,{onOpenChange:P=>{!P&&!e(p)&&o(!1)},get open(){return o()},set open(P){o(P)},children:(P,B)=>{var fe=K(),ge=$(fe);V(ge,()=>_r,(z,_)=>{_(z,{class:"w-96 p-6",children:(v,te)=>{var Ee=jr(),re=$(Ee);V(re,()=>hr,(T,J)=>{J(T,{class:"p-2",children:(A,Q)=>{var W=K(),Se=$(W);V(Se,()=>xr,(he,Me)=>{Me(he,{children:(X,ne)=>{Ie();var F=y();g(le=>d(F,le),[()=>b()("invite.organization.page_title",{orgName:e(h)})]),i(X,F)},$$slots:{default:!0}})}),i(A,W)},$$slots:{default:!0}})});var U=n(re,2),ae=r(U),oe=r(ae,!0);a(ae);var L=n(ae,2),se=r(L,!0);a(L),a(U);var _e=n(U,2),ie=r(_e);Qe(ie,{variant:"outline",onclick:()=>o(!1),get disabled(){return e(p)},children:(T,J)=>{Ie();var A=y();g(Q=>d(A,Q),[()=>b()("delete_modal.no")]),i(T,A)},$$slots:{default:!0}});var Ne=n(ie,2);Qe(Ne,{onclick:ze,get loading(){return e(p)},get disabled(){return e(p)},children:(T,J)=>{Ie();var A=y();g(Q=>d(A,Q),[()=>b()("invite.organization.accept_button")]),i(T,A)},$$slots:{default:!0}}),a(_e),g((T,J)=>{d(oe,T),d(se,J)},[Y,()=>b()("invite.organization.email_line",{email:c.invite.email})]),i(v,Ee)},$$slots:{default:!0}})}),i(P,fe)},$$slots:{default:!0}})}),i(M,pe),Ae(),j()}var Tr=k(' <span class="ui:text-primary italic"> </span>',1),Ar=k("<!> <!> <!>",1),Er=k("<!> <!>",1),Mr=k("<!> <!>",1);function fo(M,c){Te(c,!0);const b=()=>ue(Dt,"$profile",o),C=()=>ue(ce,"$t",o),j=()=>ue(St,"$currentOrg",o),[o,p]=ut();let h=He(null),Y=He(!1);const ze=new Intl.DateTimeFormat("en-US",{weekday:"long",month:"long",day:"numeric"}).format(new Date),pe=l(()=>{var _;return((_=b().fullname)==null?void 0:_.trim().split(/\s+/)[0])||C()("dashboard.learner")});let ve=l(()=>de.enrolledCourses.reduce((_,v)=>{const te="exercisesCompleted"in v&&typeof v.exercisesCompleted=="number"?v.exercisesCompleted:0;return _+(v.progressRate||0)+te},0)),q=l(()=>de.enrolledCourses.reduce((_,v)=>{const te="exerciseCount"in v&&typeof v.exerciseCount=="number"?v.exerciseCount:0;return _+(v.lessonCount||0)+te},0)),I=l(()=>e(q)>0?Math.round(e(ve)/e(q)*100):0);Ht(async()=>{if(!(!b().id||!j().id))try{const v=await(await mt.invite.organization.pending.$get()).json();v.success&&v.data&&(me(h,v.data,!0),me(Y,!0))}catch(_){console.error("Failed to check pending org invite",_)}});function P(){window.location.href="/lms"}var B=Mr();Jt("16cvjxu",_=>{Kt(()=>{Yt.title="Student Dashboard - ClassroomIO"})});var fe=$(B);V(fe,()=>gr,(_,v)=>{v(_,{class:"mx-auto w-full max-w-4xl",children:(te,Ee)=>{var re=Er(),U=$(re);V(U,()=>mr,(oe,L)=>{L(oe,{children:(se,_e)=>{var ie=K(),Ne=$(ie);V(Ne,()=>pr,(T,J)=>{J(T,{children:(A,Q)=>{var W=Ar(),Se=$(W);V(Se,()=>zt,(X,ne)=>{ne(X,{children:(F,le)=>{Ie();var G=y();g(()=>d(G,ze)),i(F,G)},$$slots:{default:!0}})});var he=n(Se,2);V(he,()=>vr,(X,ne)=>{ne(X,{children:(F,le)=>{Ie();var G=Tr(),xe=$(G),$e=n(xe),be=r($e);a($e),g(E=>{d(xe,`${E??""}, `),d(be,`${e(pe)??""}.`)},[()=>C()(or())]),i(F,G)},$$slots:{default:!0}})});var Me=n(he,2);V(Me,()=>zt,(X,ne)=>{ne(X,{children:(F,le)=>{var G=K(),xe=$(G);{var $e=E=>{var ye=y();g(De=>d(ye,De),[()=>C()("dashboard.lms_today_progress",{progress:e(I)})]),i(E,ye)},be=E=>{var ye=y();g(De=>d(ye,De),[()=>C()("dashboard.lms_today_empty")]),i(E,ye)};w(xe,E=>{e(q)>0?E($e):E(be,!1)})}i(F,G)},$$slots:{default:!0}})}),i(A,W)},$$slots:{default:!0}})}),i(se,ie)},$$slots:{default:!0}})});var ae=n(U,2);{const oe=L=>{Or(L,{})};V(ae,()=>fr,(L,se)=>{se(L,{child:oe,$$slots:{child:!0}})})}i(te,re)},$$slots:{default:!0}})});var ge=n(fe,2);{var z=_=>{Lr(_,{get invite(){return e(h)},onAccepted:P,get open(){return e(Y)},set open(v){me(Y,v,!0)}})};w(ge,_=>{e(h)&&_(z)})}i(M,B),Ae(),p()}export{fo as component};

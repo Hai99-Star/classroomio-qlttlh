@@ -1,4 +1,4 @@
-const { TRUSTED_ORIGINS: TRUSTED_ORIGINS_STRING, PUBLIC_SERVER_URL } = process.env;
+const { DASHBOARD_ORIGIN, TRUSTED_ORIGINS: TRUSTED_ORIGINS_STRING, PUBLIC_SERVER_URL } = process.env;
 
 const DEFAULT_TRUSTED_ORIGINS = [
   'http://localhost:5173',
@@ -25,4 +25,21 @@ export const TRUSTED_ORIGINS = TRUSTED_ORIGINS_STRING
     ]
   : DEFAULT_TRUSTED_ORIGINS;
 
-export const BASE_URL = PUBLIC_SERVER_URL || 'http://localhost:3002';
+function isRenderSplitDomain() {
+  if (!PUBLIC_SERVER_URL || !DASHBOARD_ORIGIN) return false;
+
+  try {
+    const apiUrl = new URL(PUBLIC_SERVER_URL);
+    const dashboardUrl = new URL(DASHBOARD_ORIGIN);
+
+    return (
+      apiUrl.hostname.endsWith('.onrender.com') &&
+      dashboardUrl.hostname.endsWith('.onrender.com') &&
+      apiUrl.origin !== dashboardUrl.origin
+    );
+  } catch {
+    return false;
+  }
+}
+
+export const BASE_URL = isRenderSplitDomain() ? DASHBOARD_ORIGIN! : PUBLIC_SERVER_URL || 'http://localhost:3002';

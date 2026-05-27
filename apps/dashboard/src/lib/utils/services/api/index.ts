@@ -21,8 +21,18 @@ export const getRequestBaseUrl = () => {
   // Self-hosted: dashboard and API are on different subdomains of the
   // operator's apex. Browser calls go straight to PUBLIC_SERVER_URL;
   // cookies cross subdomains via AUTH_COOKIE_DOMAIN. No Worker proxy.
+  const publicServerUrl = env.PUBLIC_SERVER_URL;
+  const isRenderSplitDomain =
+    publicServerUrl &&
+    window.location.hostname.endsWith('.onrender.com') &&
+    new URL(publicServerUrl, window.location.origin).hostname !== window.location.hostname;
+
+  if (isRenderSplitDomain) {
+    return `${window.location.origin}/proxy`;
+  }
+
   if (env.PUBLIC_IS_SELFHOSTED === 'true' || dev) {
-    return env.PUBLIC_SERVER_URL ?? '';
+    return publicServerUrl ?? '';
   }
 
   // Cloud (multi-tenant): same-origin via the Cloudflare Worker `/proxy`

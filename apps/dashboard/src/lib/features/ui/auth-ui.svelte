@@ -56,8 +56,15 @@
 
     try {
       const apiBaseUrl = env.PUBLIC_SERVER_URL?.replace(/\/$/, '');
+      const isRenderSplitDomain =
+        apiBaseUrl &&
+        window.location.hostname.endsWith('.onrender.com') &&
+        new URL(apiBaseUrl, window.location.origin).hostname !== window.location.hostname;
       const isCrossOriginSelfHosted =
-        env.PUBLIC_IS_SELFHOSTED === 'true' && apiBaseUrl && apiBaseUrl !== window.location.origin;
+        env.PUBLIC_IS_SELFHOSTED === 'true' &&
+        apiBaseUrl &&
+        apiBaseUrl !== window.location.origin &&
+        !isRenderSplitDomain;
 
       if (isCrossOriginSelfHosted) {
         const url = new URL('/auth/google', apiBaseUrl);

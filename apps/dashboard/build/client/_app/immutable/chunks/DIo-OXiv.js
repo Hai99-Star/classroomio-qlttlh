@@ -1,0 +1,1 @@
+const A={BASIC:"BASIC",EARLY_ADOPTER:"EARLY_ADOPTER",ENTERPRISE:"ENTERPRISE"},S={[A.BASIC]:"Free",[A.EARLY_ADOPTER]:"Early Adopter",[A.ENTERPRISE]:"Enterprise"};var R;(function(E){E.Section="SECTION",E.Lesson="LESSON",E.Exercise="EXERCISE"})(R||(R={}));export{R as C,A as P,S as a};
